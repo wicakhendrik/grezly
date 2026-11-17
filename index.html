@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="id" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Grezly.app — Lab &amp; daftar project</title>
+  <meta name="description" content="Grezly.app adalah lab pribadi dan daftar project buatan sendiri: Bandha, Kuncung, Tempmail, dan Amalio.">
+  <meta name="theme-color" content="#0c1210">
+  <meta property="og:title" content="Grezly.app — Lab &amp; daftar project">
+  <meta property="og:description" content="Daftar aplikasi yang dibangun sendiri: Bandha, Kuncung, Tempmail, dan Amalio.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://grezly.app/">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230c1210'/%3E%3Cg fill='none' stroke='%23f5b942' stroke-width='3.5'%3E%3Cpath d='M32 10c14 0 23 9 22 22-1 14-11 22-24 22C17 54 9 44 10 31c1-13 9-21 22-21z'/%3E%3Cpath d='M32 20c8 0 13 5 12 12-1 8-6 12-14 12-7 0-11-5-10-12 1-8 5-12 12-12z'/%3E%3C/g%3E%3Ccircle cx='32' cy='32' r='4.5' fill='%23f5b942'/%3E%3C/svg%3E">
+
+  <script>
+    document.documentElement.classList.add('js');
+    try {
+      var t = localStorage.getItem('grezly-theme');
+      if (!t) t = matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', t);
+    } catch (e) {}
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,300..900,0..100,0..1;1,9..144,300..900,0..100,0..1&family=Instrument+Sans:wght@400..700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#proyek">Lewati ke daftar project</a>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav">
+    <a class="brand" href="#top" aria-label="Grezly.app — beranda">
+      <svg class="mark" viewBox="0 0 64 64" aria-hidden="true">
+        <g fill="none" stroke="currentColor" stroke-width="3.5" stroke-linejoin="round">
+          <path d="M32 6c16 0 26 10 25 25-1 16-12 27-26 27C16 58 6 46 7 31 8 16 17 6 32 6z"/>
+          <path d="M32 18c9 0 15 6 14 14-1 9-7 14-15 14-8 0-13-6-12-14 1-9 6-14 13-14z"/>
+        </g>
+        <circle cx="32" cy="32" r="5" fill="var(--honey)"/>
+      </svg>
+      <span class="brand-name">Grezly<span>.app</span></span>
+    </a>
+    <nav class="nav-links" aria-label="Navigasi utama">
+      <a href="#proyek">Project</a>
+      <a href="#prinsip">Prinsip</a>
+      <a href="#berikutnya">Segera</a>
+    </nav>
+    <button class="theme-btn" id="themeBtn" type="button" aria-label="Ganti tema terang/gelap">
+      <svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+      <svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M5.3 18.7l1.6-1.6M17.1 6.9l1.6-1.6"/></g></svg>
+    </button>
+  </header>
+
+  <main id="top">
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="hero">
+      <canvas id="topo" aria-hidden="true"></canvas>
+      <div class="hero-fade" aria-hidden="true"></div>
+
+      <div class="hero-inner">
+        <p class="eyebrow"><span class="dot"></span> Grezly.app &nbsp;·&nbsp; lab pribadi</p>
+        <h1>
+          <span class="ln"><span>Semua project,</span></span>
+          <span class="ln"><span>satu <em>tempat</em>.</span></span>
+        </h1>
+        <p class="lede">
+          Daftar aplikasi yang saya bangun dan kelola sendiri: pencatat keuangan,
+          notch untuk Windows, email sementara, dan pencatat ibadah harian.
+        </p>
+        <div class="cta">
+          <a class="btn btn-honey" href="#proyek">Lihat project
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14m0 0-6-6m6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a class="btn btn-line" href="https://bandha.grezly.app/" target="_blank" rel="noopener">Coba Bandha
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-foot">
+        <dl class="stats">
+          <div><dt>Project</dt><dd>04</dd></div>
+          <div><dt>Platform</dt><dd>Web · Windows</dd></div>
+          <div><dt>Bahasa</dt><dd>ID · EN</dd></div>
+        </dl>
+        <div class="readout" aria-hidden="true">
+          <span class="ro-label">Kursor</span>
+          <span class="ro-val">X <b id="roX">0.00</b> &nbsp;Y <b id="roY">0.00</b></span>
+          <span class="ro-elev">▲ <b id="roE">0</b> <small>level kontur</small></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ MARQUEE ============ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span style="--a:var(--bandha)">Bandha</span><i>✺</i>
+        <span style="--a:var(--kuncung)">Kuncung</span><i>✺</i>
+        <span style="--a:var(--mail)">Tempmail</span><i>✺</i>
+        <span style="--a:var(--amalio)">Amalio</span><i>✺</i>
+        <span style="--a:var(--bandha)">Bandha</span><i>✺</i>
+        <span style="--a:var(--kuncung)">Kuncung</span><i>✺</i>
+        <span style="--a:var(--mail)">Tempmail</span><i>✺</i>
+        <span style="--a:var(--amalio)">Amalio</span><i>✺</i>
+      </div>
+    </div>
+
+    <!-- ============ PROJECTS ============ -->
+    <section class="projects" id="proyek">
+      <div class="wrap">
+        <header class="sec-head" data-reveal>
+          <p class="eyebrow mono">01 / Daftar project</p>
+          <h2>Project yang<br><em>sudah bisa dipakai.</em></h2>
+          <p class="sec-lede">Empat aplikasi yang sudah live. Klik salah satu untuk membukanya.</p>
+        </header>
+
+        <div class="grid">
+
+          <!-- BANDHA -->
+          <article class="card c-bandha" style="--a:var(--bandha)" data-reveal>
+            <div class="card-top">
+              <span class="idx">PROJECT 01</span>
+              <span class="alt">Keuangan · Web</span>
+              <span class="pill live"><i></i>Live</span>
+            </div>
+            <div class="viz viz-bandha" aria-hidden="true">
+              <div class="ledger">
+                <div class="l-head"><span>Kekayaan bersih</span><span class="delta">▲ 4,2%</span></div>
+                <div class="l-num">Rp <b id="bandhaNum" data-count="128450000">128.450.000</b></div>
+                <svg class="spark" viewBox="0 0 300 70" preserveAspectRatio="none">
+                  <defs>
+                    <linearGradient id="gA" x1="0" y1="0" x2="0" y2="1">
+                      <stop offset="0" stop-color="var(--a)" stop-opacity=".35"/>
+                      <stop offset="1" stop-color="var(--a)" stop-opacity="0"/>
+                    </linearGradient>
+                  </defs>
+                  <path class="area" fill="url(#gA)" d="M0 56 C20 52 38 60 60 46 S100 42 122 34 S170 40 192 24 S252 28 300 8 V70 H0 Z"/>
+                  <path class="line" pathLength="1" fill="none" stroke="var(--a)" stroke-width="2.2" stroke-linecap="round" d="M0 56 C20 52 38 60 60 46 S100 42 122 34 S170 40 192 24 S252 28 300 8"/>
+                </svg>
+                <div class="l-rows">
+                  <div><span><i class="sw" style="--c:#7aa7ff"></i>Rekening bank</span><b>Rp 42.300.000</b></div>
+                  <div><span><i class="sw" style="--c:var(--a)"></i>Emas · 18 g</span><b>Rp 31.680.000</b></div>
+                  <div><span><i class="sw" style="--c:#c792ff"></i>Kripto</span><b>Rp 60.970.000</b></div>
+                  <div class="neg"><span><i class="sw" style="--c:#ff7a7a"></i>Hutang</span><b>− Rp 6.500.000</b></div>
+                </div>
+              </div>
+              <span class="viz-note">ilustrasi</span>
+            </div>
+            <div class="card-body">
+              <h3>Bandha</h3>
+              <p class="tagline">“Harta tertata, hati tenang.”</p>
+              <p class="desc">Buku besar pribadi untuk rekening bank, arus kas, kripto, emas, dan hutang — semuanya di satu tempat, lengkap dengan net worth, untung-rugi per aset, dan impor mutasi CSV.</p>
+              <ul class="chips"><li>Web</li><li>ID · EN</li><li>Terang &amp; gelap</li><li>Impor CSV</li></ul>
+              <div class="links">
+                <a class="btn btn-a stretch" href="https://bandha.grezly.app/" target="_blank" rel="noopener">Buka Bandha
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>              </div>
+            </div>
+          </article>
+
+          <!-- KUNCUNG -->
+          <article class="card c-kuncung" style="--a:var(--kuncung)" data-reveal>
+            <div class="card-top">
+              <span class="idx">PROJECT 02</span>
+              <span class="alt">Utilitas · Windows</span>
+              <span class="pill live"><i></i>Live</span>
+            </div>
+            <div class="viz viz-kuncung" aria-hidden="true">
+              <div class="screen">
+                <div class="batik"></div>
+                <div class="notch" id="notch">
+                  <span class="n-ico" id="nIco">♪</span>
+                  <span class="n-txt" id="nTxt">Lirik tersinkron</span>
+                  <span class="n-ext" id="nExt">0:42</span>
+                </div>
+                <div class="screen-label">Windows 10 · 11</div>
+              </div>
+            </div>
+            <div class="card-body">
+              <h3>Kuncung</h3>
+              <p class="tagline">“Notch yang hidup untuk Windows.”</p>
+              <p class="desc">Mengubah bagian atas layar Windows menjadi notch berbentuk pil yang berisi musik dengan lirik tersinkron, harga saham &amp; emas, jadwal salat, kalender, dan asisten AI. Tanpa akun dan tanpa telemetri.</p>
+              <ul class="chips"><li>Windows</li><li>9 gaya</li><li>Tema batik</li><li>Tanpa akun</li></ul>
+              <div class="links">
+                <a class="btn btn-a stretch" href="https://kuncung.grezly.app/" target="_blank" rel="noopener">Buka Kuncung
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- TEMPMAIL -->
+          <article class="card c-mail" style="--a:var(--mail)" data-reveal>
+            <div class="card-top">
+              <span class="idx">PROJECT 03</span>
+              <span class="alt">Utilitas · Web</span>
+              <span class="pill live"><i></i>Live</span>
+            </div>
+            <div class="viz viz-mail" aria-hidden="true">
+              <div class="mailbox">
+                <div class="addr">
+                  <span class="addr-text" id="addrText"></span><span class="caret"></span>
+                  <span class="copy">Salin</span>
+                </div>
+                <div class="refresh"><i class="ring"></i>Inbox diperbarui otomatis tiap 30 detik</div>
+                <ul class="inbox" id="inbox"></ul>
+              </div>
+            </div>
+            <div class="card-body">
+              <h3>Tempmail</h3>
+              <p class="tagline">“Email sementara, sekali pakai.”</p>
+              <p class="desc">Alamat <b>@grezly.app</b> sementara untuk mendaftar atau menerima kode verifikasi tanpa memakai email utama. Salin alamatnya, pakai, dan inbox diperbarui otomatis.</p>
+              <ul class="chips"><li>Web</li><li>Auto-refresh</li><li>Terang &amp; gelap</li></ul>
+              <div class="links">
+                <a class="btn btn-a stretch" href="https://tempmail.grezly.app/" target="_blank" rel="noopener">Buka Tempmail
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- AMALIO -->
+          <article class="card c-amalio" style="--a:var(--amalio)" data-reveal>
+            <div class="card-top">
+              <span class="idx">PROJECT 04</span>
+              <span class="alt">Ibadah &amp; belajar · Web</span>
+              <span class="pill live"><i></i>Live</span>
+            </div>
+            <div class="viz viz-amalio" aria-hidden="true">
+              <div class="ibadah">
+                <div class="i-head"><span>Ibadah hari ini</span><span class="i-count"><b id="iCount">0</b>/5 salat</span></div>
+                <ul class="salat" id="salat">
+                  <li>Subuh</li><li>Dzuhur</li><li>Ashar</li><li>Maghrib</li><li>Isya</li>
+                </ul>
+                <div class="i-row">
+                  <div class="ringbox">
+                    <svg viewBox="0 0 80 80">
+                      <circle cx="40" cy="40" r="32" fill="none" stroke="var(--line-2)" stroke-width="7"/>
+                      <circle id="ringFill" cx="40" cy="40" r="32" fill="none" stroke="var(--a)" stroke-width="7" stroke-linecap="round" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100" transform="rotate(-90 40 40)"/>
+                    </svg>
+                    <div class="ring-t"><b>Juz 7</b><small>tadarus</small></div>
+                  </div>
+                  <div class="sign">
+                    <span>Tanda tangan digital</span>
+                    <svg viewBox="0 0 160 46" aria-hidden="true"><path id="sigPath" pathLength="1" d="M6 32c10-22 18-26 20-14s-8 24 2 20 12-26 22-24-2 20 8 18 14-14 20-12-4 14 6 12 16-8 22-6 14 6 24 0 12-10 24-10" fill="none" stroke="var(--a)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <h3>Amalio</h3>
+              <p class="tagline">“Permudah pencatatan ibadah harian.”</p>
+              <p class="desc">Mencatat salat, puasa, dan bacaan Al-Qur’an setiap hari, lengkap dengan laporan bertanda tangan digital. Ada grup tadarus untuk khatam bersama, dan guru bisa memantau aktivitas siswa serta memberi umpan balik.</p>
+              <ul class="chips"><li>Web</li><li>Tadarus grup</li><li>Laporan harian</li><li>Mode guru</li></ul>
+              <div class="links">
+                <a class="btn btn-a stretch" href="https://amalio.my.id/" target="_blank" rel="noopener">Buka Amalio
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- NEXT CAMP -->
+          <article class="card c-next" id="berikutnya" data-reveal>
+            <div class="next-l">
+              <span class="idx">PROJECT 05</span>
+              <h3>Segera hadir<span class="caret"></span></h3>
+            </div>
+            <p class="next-r">Project berikutnya masih dalam pengerjaan. Daftar ini akan terus diperbarui.</p>
+            <svg class="trail" viewBox="0 0 400 40" preserveAspectRatio="none" aria-hidden="true"><path d="M0 30 C 60 6, 110 38, 170 20 S 290 4, 400 22" fill="none" stroke="currentColor" stroke-width="2" stroke-dasharray="3 9" stroke-linecap="round"/></svg>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PRINCIPLES ============ -->
+    <section class="principles" id="prinsip">
+      <div class="wrap">
+        <header class="sec-head" data-reveal>
+          <p class="eyebrow mono">02 / Prinsip</p>
+          <h2>Cara <em>membangunnya.</em></h2>
+          <p class="sec-lede">Semua project di sini dikerjakan dengan prinsip yang sama.</p>
+        </header>
+        <div class="p-grid">
+          <div class="p-item" data-reveal>
+            <span class="p-num">01</span>
+            <h3>Dari kebutuhan nyata</h3>
+            <p>Dibuat untuk menyelesaikan masalah sehari-hari, dan dipakai sendiri sebelum dirilis.</p>
+          </div>
+          <div class="p-item" data-reveal>
+            <span class="p-num">02</span>
+            <h3>Sederhana &amp; rapi</h3>
+            <p>Antarmuka bersih tanpa fitur yang tidak perlu, supaya mudah dipakai sehari-hari.</p>
+          </div>
+          <div class="p-item" data-reveal>
+            <span class="p-num">03</span>
+            <h3>Konteks lokal</h3>
+            <p>Bahasa Indonesia, harga emas, jadwal salat, dan kebutuhan lain yang relevan di sini.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="foot">
+    <div class="wrap">
+      <p class="foot-big">Masih banyak<br>yang sedang <em>dikerjakan.</em></p>
+      <div class="foot-row">
+        <div class="foot-brand">
+          <svg class="mark" viewBox="0 0 64 64" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="3.5" stroke-linejoin="round"><path d="M32 6c16 0 26 10 25 25-1 16-12 27-26 27C16 58 6 46 7 31 8 16 17 6 32 6z"/><path d="M32 18c9 0 15 6 14 14-1 9-7 14-15 14-8 0-13-6-12-14 1-9 6-14 13-14z"/></g><circle cx="32" cy="32" r="5" fill="var(--honey)"/></svg>
+          <span>© <span id="yr">2026</span> Grezly.app — dibuat di Indonesia.</span>
+        </div>
+        <nav class="foot-links" aria-label="Tautan aplikasi">
+          <a href="https://bandha.grezly.app/" target="_blank" rel="noopener">Bandha</a>
+          <a href="https://kuncung.grezly.app/" target="_blank" rel="noopener">Kuncung</a>
+          <a href="https://tempmail.grezly.app/" target="_blank" rel="noopener">Tempmail</a>
+          <a href="https://amalio.my.id/" target="_blank" rel="noopener">Amalio</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
